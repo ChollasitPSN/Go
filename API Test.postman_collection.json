@@ -1,0 +1,484 @@
+{
+	"info": {
+		"_postman_id": "b712e5e9-30c9-45ca-8d7a-b451e1fa0102",
+		"name": "API Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28285083"
+	},
+	"item": [
+		{
+			"name": "get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:5000/api/products",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, Authorization,X-CSRF-Token"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jul 2023 08:24:00 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "309"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"ID\": 1,\n        \"Gender\": \"Male\",\n        \"Plaincolor\": \"White\",\n        \"Pattern\": \"Dot\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"S\",\n        \"Price\": 2500\n    },\n    {\n        \"ID\": 2,\n        \"Gender\": \"FeMale\",\n        \"Plaincolor\": \"White\",\n        \"Pattern\": \"Dot\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"SS\",\n        \"Price\": 2500\n    },\n    {\n        \"ID\": 3,\n        \"Gender\": \"FeMale\",\n        \"Plaincolor\": \"Black\",\n        \"Pattern\": \"Dot\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"S\",\n        \"Price\": 1500\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"ID\": 4,\r\n        \"Gender\": \"FeMale\",\r\n        \"Plaincolor\": \"Pink\",\r\n        \"Pattern\": \"Plain\",\r\n        \"Figure\": \"Fit\",\r\n        \"Size\": \"M\",\r\n        \"Price\": 2500\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/products",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"ID\": 4,\r\n        \"Gender\": \"FeMale\",\r\n        \"Plaincolor\": \"Pink\",\r\n        \"Pattern\": \"Plain\",\r\n        \"Figure\": \"Fit\",\r\n        \"Size\": \"M\",\r\n        \"Price\": 2500\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, Authorization,X-CSRF-Token"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jul 2023 08:24:48 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"productid\": 0\n}"
+				},
+				{
+					"name": "Post",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, Authorization,X-CSRF-Token"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jul 2023 08:24:58 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "413"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"ID\": 1,\n        \"Gender\": \"Male\",\n        \"Plaincolor\": \"White\",\n        \"Pattern\": \"Dot\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"S\",\n        \"Price\": 2500\n    },\n    {\n        \"ID\": 2,\n        \"Gender\": \"FeMale\",\n        \"Plaincolor\": \"White\",\n        \"Pattern\": \"Dot\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"SS\",\n        \"Price\": 2500\n    },\n    {\n        \"ID\": 3,\n        \"Gender\": \"FeMale\",\n        \"Plaincolor\": \"Black\",\n        \"Pattern\": \"Dot\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"S\",\n        \"Price\": 1500\n    },\n    {\n        \"ID\": 4,\n        \"Gender\": \"FeMale\",\n        \"Plaincolor\": \"Pink\",\n        \"Pattern\": \"Plain\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"M\",\n        \"Price\": 2500\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Del",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/products/4",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Del",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/products/4",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, Authorization,X-CSRF-Token"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jul 2023 08:25:18 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "413"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"ID\": 1,\n        \"Gender\": \"Male\",\n        \"Plaincolor\": \"White\",\n        \"Pattern\": \"Dot\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"S\",\n        \"Price\": 2500\n    },\n    {\n        \"ID\": 2,\n        \"Gender\": \"FeMale\",\n        \"Plaincolor\": \"White\",\n        \"Pattern\": \"Dot\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"SS\",\n        \"Price\": 2500\n    },\n    {\n        \"ID\": 3,\n        \"Gender\": \"FeMale\",\n        \"Plaincolor\": \"Black\",\n        \"Pattern\": \"Dot\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"S\",\n        \"Price\": 1500\n    },\n    {\n        \"ID\": 4,\n        \"Gender\": \"FeMale\",\n        \"Plaincolor\": \"Pink\",\n        \"Pattern\": \"Plain\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"M\",\n        \"Price\": 2500\n    }\n]"
+				},
+				{
+					"name": "Del",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, Authorization,X-CSRF-Token"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jul 2023 08:25:39 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "309"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"ID\": 1,\n        \"Gender\": \"Male\",\n        \"Plaincolor\": \"White\",\n        \"Pattern\": \"Dot\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"S\",\n        \"Price\": 2500\n    },\n    {\n        \"ID\": 2,\n        \"Gender\": \"FeMale\",\n        \"Plaincolor\": \"White\",\n        \"Pattern\": \"Dot\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"SS\",\n        \"Price\": 2500\n    },\n    {\n        \"ID\": 3,\n        \"Gender\": \"FeMale\",\n        \"Plaincolor\": \"Black\",\n        \"Pattern\": \"Dot\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"S\",\n        \"Price\": 1500\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/products",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Content-Type, Content-Length, Accept-Encoding, Authorization,X-CSRF-Token"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, OPTIONS, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jul 2023 08:31:22 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "309"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"ID\": 1,\n        \"Gender\": \"Male\",\n        \"Plaincolor\": \"White\",\n        \"Pattern\": \"Dot\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"S\",\n        \"Price\": 2500\n    },\n    {\n        \"ID\": 2,\n        \"Gender\": \"FeMale\",\n        \"Plaincolor\": \"White\",\n        \"Pattern\": \"Dot\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"SS\",\n        \"Price\": 2500\n    },\n    {\n        \"ID\": 3,\n        \"Gender\": \"FeMale\",\n        \"Plaincolor\": \"Black\",\n        \"Pattern\": \"Dot\",\n        \"Figure\": \"Fit\",\n        \"Size\": \"S\",\n        \"Price\": 1500\n    }\n]"
+				}
+			]
+		}
+	]
+}
